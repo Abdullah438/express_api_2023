@@ -1,0 +1,30 @@
+{
+  "name": "express_api_2023",
+  "version": "1.0.0",
+  "description": "This is express js server built with latest tips and practices",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Abdullah438/express_api_2023.git"
+  },
+  "author": "Abdullah Khan",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/Abdullah438/express_api_2023/issues"
+  },
+  "homepage": "https://github.com/Abdullah438/express_api_2023#readme",
+  "dependencies": {
+    "chalk": "^5.2.0",
+    "dotenv": "^16.1.4",
+    "express": "^4.18.2",
+    "mongoose": "^7.2.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
