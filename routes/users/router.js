@@ -4,9 +4,8 @@ import {
   getAllUsers,
   getUserById,
   updateUser,
-  patchUser,
   deleteUser,
-} from "../controllers/usersController.js";
+} from "../../controllers/users/controller.js";
 
 const router = Router();
 
@@ -24,8 +23,5 @@ router.route("/:id").delete(deleteUser);
 
 // PUT a user by id
 router.route("/:id").put(updateUser);
-
-// PATCH a user by id
-router.route("/:id").patch(patchUser);
 
 export default router;

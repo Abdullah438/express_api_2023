@@ -21,6 +21,10 @@ const UserSchema = new Schema({
     type: String,
     required: [true, "Avatar link is required"],
   },
+  createdAt: {
+    type: Number,
+    default: new Date().getTime(),
+  },
 });
 
 // Export user model

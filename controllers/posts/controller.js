@@ -18,12 +18,9 @@ const updatePost = async (req, res) => {
   res.send("Post updated");
 };
 
-const patchPost = async (req, res) => {
-  // Patch post in database
-  res.send("Post patched");
-};
-
 const deletePost = async (req, res) => {
   // Delete post from database
   res.send("Post deleted");
 };
+
+export { savePost, getPosts, getPostById, updatePost, deletePost };
