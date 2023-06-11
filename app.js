@@ -4,6 +4,7 @@ import chalk from "chalk";
 import connectDB from "./db/connect.js";
 import userRouter from "./routes/users/router.js";
 import postRouter from "./routes/posts/router.js";
+import commentRouter from "./routes/posts/comments/router.js";
 //Configure .env file
 dotenv.config();
 //Express App
@@ -15,6 +16,8 @@ app.use(express.json());
 app.use("/api/users", userRouter);
 // Post Router
 app.use("/api/posts", postRouter);
+// Comment Router
+app.use("/api/comments", commentRouter);
 
 const start = async () => {
   try {

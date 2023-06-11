@@ -24,4 +24,5 @@ router.route("/:id").put(updatePost);
 // Delete a post by id
 router.route("/:id").delete(deletePost);
 
+// Export the router
 export default router;
